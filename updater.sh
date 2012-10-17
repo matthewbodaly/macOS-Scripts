@@ -1,5 +1,5 @@
 #!/bin/bash
-# Apptio Network Name Updater thingy
+# Network Name Updater thingy
 # Author : Matthew Bodaly
 # Updated : 17 October 2012
 
