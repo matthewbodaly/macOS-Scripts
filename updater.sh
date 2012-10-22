@@ -21,6 +21,8 @@ scutil --set HostName $BELUS
 scutil --set ComputerName $BELUS
 # Write the variable to the end of /etc/hostconfig. This uses the FQDN. If you have a FQDN... you should change this.
 echo HOSTNAME=$BELUS.apptio.lan >> /etc/hostconfig
+# change the Bonjour name
+systemsetup -setlocalsubnetname $BELUS
 #reenable Bonjour
 launchctl load -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist
 
