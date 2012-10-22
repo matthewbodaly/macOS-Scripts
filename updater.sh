@@ -3,6 +3,8 @@
 # Author : Matthew Bodaly
 # Updated : 17 October 2012
 
+# Disable Bonjour
+launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist
 # Make a folder to store resource files
 mkdir /Library/Application\ Support/caspersupport
 # Ask for the barcode of the computer
@@ -19,3 +21,6 @@ scutil --set HostName $BELUS
 scutil --set ComputerName $BELUS
 # Write the variable to the end of /etc/hostconfig. This uses the FQDN. If you have a FQDN... you should change this.
 echo HOSTNAME=$BELUS.apptio.lan >> /etc/hostconfig
+#reenable Bonjour
+launchctl load -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist
+
