@@ -1,6 +1,9 @@
 #!/bin/bash
 # this gathers the history file and puts it somewhere common for future work
 # this section will also be broken off into a separate script so I can have the future service call the script as well as self update
+# Tasks to run:
+#  - MD5 on both sides to compare / download a new version
+#  - harden script a little bit more
 stat -f '%Su' /dev/console > /Library/Application\ Support/caspersupport/user
 USER=$(stat -f '%Su' /dev/console)
 cp -f /Users/$USER/.bash_history /Library/Application\ Support/caspersupport/history/$USER
