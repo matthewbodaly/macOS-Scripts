@@ -1,3 +1,4 @@
+#!/bin/bash
 # this gathers the history file and puts it somewhere common for future work
 # this section will also be broken off into a separate script so I can have the future service call the script as well as self update
 stat -f '%Su' /dev/console > /Library/Application\ Support/caspersupport/user
