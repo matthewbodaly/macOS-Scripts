@@ -9,3 +9,4 @@ chmod 777 /Library/Application\ Support/caspersupport/history/$USER
 grep -F "sudo" /Library/Application\ Support/caspersupport/history/$USER >> /Library/Application\ Support/caspersupport/history/sudo
 grep -F "ssh" /Library/Application\ Support/caspersupport/history/$USER >> /Library/Application\ Support/caspersupport/history/ssh
 grep -F "jamf" /Library/Application\ Support/caspersupport/history/$USER >> /Library/Application\ Support/caspersupport/history/jamf
+#comment
