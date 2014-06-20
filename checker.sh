@@ -1,4 +1,5 @@
 #!/bin/bash
+# This checks to make sure all of the system names are the same as the assettag file.
 BELUS=$(more /Library/Application\ Support/caspersupport/assettag)
 LOCAL=$(scutil --get ComputerName)
 if [ "$BELUS" != "$LOCAL" ];
