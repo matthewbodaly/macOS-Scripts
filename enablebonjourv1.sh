@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Enable Secure Bonjour
 # Set group name to check against
 groupname=”domain users”
 
