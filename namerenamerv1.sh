@@ -1,5 +1,5 @@
 #!/bin/bash
-# this ninja takes the name that the computer has in JAMF and then renames 
+# this takes the name that the computer has in JAMF and then renames 
 # all computer variables to that name AND adds a flat text file at
 # /Library/Application\ Support/assettag
 # Make a folder to store resource files. Commenting this out since this line isn't needed
