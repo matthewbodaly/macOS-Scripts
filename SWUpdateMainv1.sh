@@ -12,13 +12,13 @@ mountPoint=$1
 computerName=$2
 username=$3
 postpones=$4			# sets number of times user can postpone updates before forcing down
-NonSysCore1=$5			# sets policy name of non system update group
-NonSysCore2=$6			# sets policy name of non system update group
-NonSysCore3=$7			# sets policy name of non system update group
-NonSysCore4=$8			# sets policy name of non system update group
-NonSysCore5=$9			# sets policy name of non system update group
-NonSysCore6=$10			# sets policy name of non system update group
-NonSysCore7=$11			# sets policy name of non system update group
+# NonSysCore1=$5			# sets policy name of non system update group
+# NonSysCore2=$6			# sets policy name of non system update group
+# NonSysCore3=$7			# sets policy name of non system update group
+# NonSysCore4=$8			# sets policy name of non system update group
+# NonSysCore5=$9			# sets policy name of non system update group
+# NonSysCore6=$10			# sets policy name of non system update group
+# NonSysCore7=$11			# sets policy name of non system update group
 
 ######### Set variables for the script ############
 #Check that Cocoa Dialog and Terminal Notifier Exist, install if needed.
