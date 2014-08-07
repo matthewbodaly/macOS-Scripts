@@ -75,7 +75,7 @@ JSSAPIauth="JSSAPIuser:asimplepassword"
 echo "Variables: JSS API User was set"
 
 # Set Minutes for Restart
-minToRestart="180"
+minToRestart="240"
 
 # Get the group membership for the client
 	#First, Get MAC Address using networksetup
