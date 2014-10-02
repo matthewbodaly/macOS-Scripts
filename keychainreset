@@ -7,8 +7,20 @@
 # Brief Description: Deletes the users login.keychain, and creates a new keychain
 ########################################################################
 
+#Check that Cocoa Dialog and Terminal Notifier Exist, install if needed.
+echo "Checking for Cocoa Dialog and Terminal Notifier..."
+if [ ! -e /Library/Application\ Support/caspersupport/cocoaDialog.app/Contents/MacOS/cocoaDialog ]; then
+	echo "Cocoa Dialog Missing - Triggering installalerts"
+	jamf policy -trigger installalerts
+elif [ ! -e /Library/Application\ Support/caspersupport/terminal-notifier.app/Contents/MacOS/terminal-notifier ]; then
+	echo "Terminal Notifier Missing - Triggering installalerts"
+	jamf policy -trigger installalerts
+else
+	echo "Cocoa Dialog and Terminal Notifier are installed!"
+fi
+
 # Set CocoaDialog Location
-CD="/Path/to/CocoaDialog.app/Contents/MacOS/CocoaDialog"
+CD="/Library/Application\ Support/caspersupport/cocoaDialog.app/Contents/MacOS/cocoaDialog"
 
 #Find out who's logged in
 USER=`who | grep console | awk '{print $1}'`
