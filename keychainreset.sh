@@ -3,7 +3,7 @@
 ########################################################################
 # Created By: Andrina Kelly, andrina.kelly@bellmedia.ca, Ext 4995
 # Creation Date: July 2013
-# Last modified: July 25th, 2013
+# Last modified: November 19, 2015 - Matthew Bodaly - Updated the method to create user variable.
 # Brief Description: Deletes the users login.keychain, and creates a new keychain
 ########################################################################
 
@@ -23,7 +23,7 @@ fi
 CD="/Library/Application\ Support/caspersupport/cocoaDialog.app/Contents/MacOS/cocoaDialog"
 
 #Find out who's logged in
-USER=`who | grep console | awk '{print $1}'`
+USER=`python -c 'from SystemConfiguration import SCDynamicStoreCopyConsoleUser; import sys; username = (SCDynamicStoreCopyConsoleUser(None, None, None) or [None])[0]; username = [username,""][username in [u"loginwindow", None, u""]]; sys.stdout.write(username + "\n");'`
 
 #Get the name of the users keychain - some messy sed and awk to set up the correct name for security to like
 KEYCHAIN=`su $USER -c "security list-keychains" | grep login | sed -e 's/\"//g' | sed -e 's/\// /g' | awk '{print $NF}'`
