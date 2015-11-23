@@ -1,11 +1,11 @@
 #!/bin/bash
-# this ninja takes the name that the computer has in JAMF and then renames 
+# this ninja takes the name that the computer has in JAMF and then renames
 # all computer variables to that name AND adds a flat text file at
-# /Library/Application\ Support/assettag
+# /Library/Application\ Support/assettag (or whereever)
 # Make a folder to store resource files. Commenting this out since this line isn't needed
 # when the script is deployed via Casper. Uncomment to enable.
 # mkdir /Library/Application\ Support/caspersupport
-# force an unbind. 
+# force an unbind.
 dsconfigad -force -remove -u user -p babytownfrolics
 #ask the user what their asset tag is
 CD="/usr/local/bin/cocoaDialog.app/Contents/MacOS/CocoaDialog"
@@ -16,7 +16,7 @@ if [ "$rv" == "1" ]; then
 elif [ "$rv" == "2" ]; then
     echo "Canceling"
     exit
-fi 
+fi
 # Get for the name of the computer from Casper and write it to a file
 # jamf -getComputerName | cut -c 16-24 > /Library/Application\ Support/caspersupport/assettag
 # Set entry as a variable
