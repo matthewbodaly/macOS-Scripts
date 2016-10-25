@@ -1,6 +1,6 @@
 #!/bin/bash
 # v1.0 / Logan Fink / 74bit / 28 April 2015
-# v1.1 / Matthew Bodaly / Mann Consulting / 20 October 2016
+# v1.1 / Matthew Bodaly /  20 October 2016
 # Updated the method to get the current user
 #
 # This puts log files on the current users desktop so they can attach it to tickets
