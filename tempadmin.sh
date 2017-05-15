@@ -7,7 +7,7 @@
 # This probably isn't the best way to do it and this method copies fairly directly from
 # https://www.jamf.com/jamf-nation/discussions/6990/temporary-admin-using-self-service
 # v.1.1 - Matthew Bodaly May 2017
-# yourfuneral
+# yourfuneral ¯\_(ツ)_/¯
 ##############
 
 # get currently logged in user #
