@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+# mearnest / mbodaly 5 August 2020
+# there's likely a better way to do this
+# this retrieves the version of caldigit firmware of the plugged in dock and dumps it to a file.
+# that file can then be read 
+# future version of this would use something like osquery or something that doesn't require a download or .... id download jq to someones machine way in advance. 
+# yolo ops
 # define variables
 JQ_URL='https://github.com/stedolan/jq/releases/download/jq-1.6/jq-osx-amd64'
 TMPDIR="$(mktemp -d)"
