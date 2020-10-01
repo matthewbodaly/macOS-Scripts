@@ -3,15 +3,16 @@
 # Use with a reporting app to read the number and sort your computers
 # For an example of that, refer to:
 # https://gist.github.com/matthewbodaly/7a6cfabb74d896ca609bca9f62226463
-# v 1.0
-# Matthew Bodaly - March 2017
-# v 1.1
-# Matthew Bodaly - June 2017
-# v 1.1.1
-# Matthew Bodaly - July 2017
+#
+# v 1.1.1 -Matthew Bodaly - July 2017
+# v2- Matthew Bodaly - September 2020 - Added the EA used
 # Use case: All this script does is generate a random number between 1 and 10. From this point, an extension attribute (if you have Jamf Pro) reads the digit
 # Once you have a random number, you can shard the fleet.
 # For instance, a smart group made of random number 1 would have about 10% of the total fleet.
+## --- EXTENSION ATTRIBUTE
+##!/bin/sh
+#result=`head -n 1 "/Library/Application Support/dt/digit.txt"`
+#echo "<result>$result</result>"
 if [! -d "/Library/Application\ Support/XXX/" ]
 then
     echo "Directory does not exist."
