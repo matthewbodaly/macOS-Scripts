@@ -11,7 +11,7 @@
 # For instance, a smart group made of random number 1 would have about 10% of the total fleet.
 ## --- EXTENSION ATTRIBUTE
 ##!/bin/sh
-#result=`head -n 1 "/Library/Application Support/dt/digit.txt"`
+#result=`head -n 1 "/Library/Application Support/XXX/digit.txt"`
 #echo "<result>$result</result>"
 if [! -d "/Library/Application\ Support/XXX/" ]
 then
