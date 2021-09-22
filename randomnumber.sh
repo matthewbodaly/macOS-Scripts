@@ -13,6 +13,7 @@
 ##!/bin/sh
 #result=`head -n 1 "/Library/Application Support/XXX/digit.txt"`
 #echo "<result>$result</result>"
+## --- BODY
 if [! -d "/Library/Application\ Support/XXX/" ]
 then
     echo "Directory does not exist."
