@@ -19,11 +19,11 @@ defaults write /System/Library/User\ Template/English.lproj/Library/Preferences/
 ifconfig awdl0 up
 
 ### 
-# Disable Handoff
+# Enable Handoff
 # I'm not sure if this actually has much to do with interference and likely could be removed
 defaults write "$loggedInUser/Library/Preferences/ByHost/com.apple.coreservices.useractivityd.plist" ActivityAdvertisingAllowed -bool yes
 ###
-# Disable Location services
+# Enable Location services
 # You might want to double check this and the Time Zone settings after running this.
 # You can run that command with "read" instead of write to verify the settings and it will show as 0. 1 Will show if it is enabled. 
 
